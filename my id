@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ID CARD</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <style>
+        body { margin: 0; background: #f0f2f5; font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .card { width: 350px; background: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 1px solid #ddd; overflow: hidden; position: relative; }
+        .blue-line { height: 5px; background: #0052cc; }
+        .content { padding: 20px; display: grid; grid-template-columns: 110px 1fr; gap: 15px; }
+        .photo { width: 110px; height: 145px; background: #eee; border: 1px solid #0052cc; border-radius: 5px; }
+        .info { font-size: 12px; }
+        .label { color: #777; font-size: 9px; text-transform: uppercase; margin-top: 8px; display: block; }
+        .value { font-weight: bold; font-size: 14px; color: #1a1a1a; }
+        .footer { padding: 15px 20px; background: #f8f9fa; border-top: 1px solid #eee; display: flex; justify-content: space-between; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="blue-line"></div>
+        <div class="content">
+            <div class="photo">
+                <img src="https://via.placeholder.com/110x145?text=PHOTO" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="info">
+                <span class="label">ТЕГІ / ФАМИЛИЯ</span>
+                <span class="value">АМАНГЕЛДІ</span>
+                <span class="label">АТЫ / ИМЯ</span>
+                <span class="value">ЖАНБОЛАТ</span>
+                <span class="label">ӘКЕСІНІҢ АТЫ / ОТЧЕСТВО</span>
+                <span class="value">НҮРЛАНУЛЫ</span>
+                <span class="label">ТУҒАН КҮНІ</span>
+                <span class="value">07.07.2007</span>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <span class="label" style="margin:0">ЖСН / ИИН</span>
+                <span class="value">0707075553302</span>
+            </div>
+            <div style="text-align:right">
+                <span class="label" style="margin:0">МЕРЗІМІ</span>
+                <span class="value" style="font-size:11px">28.04.2035</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
